@@ -78,7 +78,7 @@ def milk_coffee(action):
             resources["coffee"] -= MENU[action]["ingredients"]["coffee"]
             resources["milk"] -= MENU[action]["ingredients"]["milk"]
             print(f"Here is your {action}. Enjoy!")
-            print(f"You get Rs. {USER["change"]} returned.")
+            print(f"You get Rs. {USER['change']} returned.")
         else:
             print("Insufficient Money")
     elif resources["milk"] < MENU[action]["ingredients"]["milk"]:
@@ -97,7 +97,7 @@ def espresso(action):
             resources["water"] -= MENU[action]["ingredients"]["water"]
             resources["coffee"] -= MENU[action]["ingredients"]["coffee"]
             print(f"Here is your {action}. Enjoy!")
-            print(f"You get Rs. {USER["change"]} returned.")
+            print(f"You get Rs. {USER['change']} returned.")
         else:
             print("Insufficient Money")
     elif resources["coffee"] < MENU[action]["ingredients"]["coffee"]:
