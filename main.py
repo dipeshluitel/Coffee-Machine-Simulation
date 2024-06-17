@@ -115,5 +115,7 @@ while decision != "off":
         espresso(decision)
     elif decision == "latte" or decision == "cappuccino":
         milk_coffee(decision)
+    elif decision == "off":
+        print("Have a nice day")
     else:
         print("Invalid Order")
